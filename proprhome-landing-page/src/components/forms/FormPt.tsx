@@ -16,6 +16,9 @@ export default function Form(props) {
       method="POST"
       style={containerStyle}
     >
+      <h2 className=" text-center font-medium text-3xl">
+        Baixar e-book gratuito
+      </h2>
       <input type="hidden" name="oid" value="00D7Q00000BRe0d" />
       <input type="hidden" name="retURL" value="http://" />
       <input

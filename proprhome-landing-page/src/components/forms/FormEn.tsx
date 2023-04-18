@@ -1,7 +1,7 @@
 //imported from framer
 
-export default function Form(props) {
-  function handleFormSubmit(event) {
+export default function Form(props: any) {
+  function handleFormSubmit(event: any) {
     event.preventDefault();
     console.log('handle Form submit running');
     // Download your PDF files here
@@ -17,7 +17,6 @@ export default function Form(props) {
       action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
       method="POST"
       style={containerStyle}
-      className="mt-5 mb-20"
     >
       <h2 className=" text-center font-medium text-3xl">
         Download free e-book
