@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
+import EnglishForm from '../forms/EnglishForm';
 import FormEn from '../forms/FormEn';
 import FormPt from '../forms/FormPt';
+import PortugueseForm from '../forms/PortugueseForm';
 
 const FormWrapper = ({ language }) => {
   return (
@@ -24,7 +26,7 @@ const FormWrapper = ({ language }) => {
         )}
       </div>
       <div className="md:mr-8 lg:mr-40">
-        {language ? <FormEn /> : <FormPt />}
+        {language ? <EnglishForm /> : <PortugueseForm />}
       </div>
     </section>
   );
