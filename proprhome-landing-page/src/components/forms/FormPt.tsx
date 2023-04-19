@@ -24,7 +24,7 @@ export default function Form(props: any) {
       }}
     >
       <h2 className=" text-center font-medium text-3xl">
-        Baixar e-book gratuito
+        Faça o download e-book gratuito
       </h2>
       <input type="hidden" name="oid" value="00D7Q00000BRe0d" />
       <input type="hidden" name="retURL" value="http://" />
@@ -32,9 +32,9 @@ export default function Form(props: any) {
         style={inputStyle}
         required
         placeholder="Nome completo"
-        id="first_name"
         maxLength={40}
-        name="first_name"
+        id="00N7Q00000JUFbc"
+        name="00N7Q00000JUFbc"
         size={20}
         type="text"
       />
@@ -52,26 +52,27 @@ export default function Form(props: any) {
 
       <input
         style={inputStyle}
-        id="Telefone"
+        id="phone"
         maxLength={40}
         name="phone"
         size={20}
         type="text"
         required
-        placeholder="Phone"
+        placeholder="Telefone"
       />
       <select
         style={inputStyle}
-        name="consumer"
-        id="consumer_type"
+        id="00N7Q00000JUFbS"
+        name="00N7Q00000JUFbS"
+        title="Tipo de Cliente"
         required
         placeholder="Select consumer type"
       >
-        <option value="Choose customer type">Escolha o tipo de cliente</option>
-        <option value="buyer">Buyer</option>
-        <option value="tenant">Tenant</option>
-        <option value="agent">Agent</option>
-        <option value="owner">Owner</option>
+        <option value="">Escolha o tipo de cliente</option>
+        <option value="Comprador">Comprador</option>
+        <option value="Inquilino">Inquilino</option>
+        <option value="Proprietário">Proprietário</option>
+        <option value="Agente">Agente</option>
       </select>
 
       <label
@@ -112,33 +113,33 @@ export default function Form(props: any) {
         >
           <input
             type="radio"
-            name="buying_time"
-            value="readyToBuy"
-            id="readyToBuy"
+            id="00N7Q00000JUIv7"
+            name="00N7Q00000JUIv7"
+            value="1"
           />
-          <label htmlFor="readyToBuy" style={labelStyle}>
+          <label htmlFor="00N7Q00000JUIv7" style={labelStyle}>
             Pronto para comprar
           </label>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="radio"
-            name="buying_time"
-            value="oneMonth"
-            id="oneMonth"
+            id="00N7Q00000JUIvC"
+            name="00N7Q00000JUIvC"
+            value="1"
           />
-          <label htmlFor="oneMonth" style={labelStyle}>
+          <label htmlFor="00N7Q00000JUIvC" style={labelStyle}>
             Dentro de 1 mês
           </label>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="radio"
-            name="buying_time"
-            value="sixMonths"
-            id="sixMonths"
+            id="00N7Q00000JUIvH"
+            name="00N7Q00000JUIvH"
+            value="1"
           />
-          <label htmlFor="sixMonths" style={labelStyle}>
+          <label htmlFor="00N7Q00000JUIvH" style={labelStyle}>
             Dentro de 6 meses
           </label>
         </div>
