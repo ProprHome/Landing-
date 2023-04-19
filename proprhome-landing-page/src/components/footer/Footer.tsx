@@ -1,6 +1,6 @@
 import SocialLinks from './SocialLinks';
 
-const Footer = ({ language }) => {
+const Footer = ({ language }: any) => {
   return (
     <footer className="p-6 bg-transparent-white md:flex md:items-center md:justify-between md:px-8 lg:px-16 ">
       {language ? (

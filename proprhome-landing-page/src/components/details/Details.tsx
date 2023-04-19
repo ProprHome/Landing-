@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Details = ({ language }) => {
+const Details = ({ language }: any) => {
   return (
     <section className="mx-2 my-16 md: mb-28 md:max-w-[996px] md:mx-auto">
       {language ? (

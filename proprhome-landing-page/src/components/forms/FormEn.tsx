@@ -16,7 +16,14 @@ export default function Form(props: any) {
       onSubmit={handleFormSubmit}
       action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
       method="POST"
-      style={containerStyle}
+      style={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        overflow: 'hidden',
+      }}
     >
       <h2 className=" text-center font-medium text-3xl">
         Download free e-book
@@ -57,7 +64,6 @@ export default function Form(props: any) {
       />
       <select
         style={inputStyle}
-        type="text"
         name="consumer"
         id="consumer_type"
         required

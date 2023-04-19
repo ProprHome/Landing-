@@ -3,7 +3,7 @@ import GlobeIcon from './GlobeIcon';
 import DownIcon from './DownIcon';
 import SocialLinks from '../footer/SocialLinks';
 
-const Header = ({ language, setLanguage }) => {
+const Header = ({ language, setLanguage }: any) => {
   const handleLanguageChange = () => {
     console.log('changing lang');
     setLanguage((pre: boolean) => !pre);

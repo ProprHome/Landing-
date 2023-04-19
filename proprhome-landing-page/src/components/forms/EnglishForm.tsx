@@ -41,10 +41,10 @@ function EnglishForm() {
         <input id="00N7Q00000JUEay" name="00N7Q00000JUEay" type="text" />
         <br />
         <label htmlFor="email">Email:</label>
-        <input id="email" maxLength="80" name="email" size="20" type="text" />
+        <input id="email" maxLength={80} name="email" size={20} type="text" />
         <br />
         <label htmlFor="phone">Phone:</label>
-        <input id="phone" maxLength="40" name="phone" size="20" type="text" />
+        <input id="phone" maxLength={40} name="phone" size={20} type="text" />
         <br />
         <label htmlFor="customerType">Customer Type:</label>
         <select

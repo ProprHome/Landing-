@@ -5,7 +5,7 @@ import FormEn from '../forms/FormEn';
 import FormPt from '../forms/FormPt';
 import PortugueseForm from '../forms/PortugueseForm';
 
-const FormWrapper = ({ language }) => {
+const FormWrapper = ({ language }: any) => {
   return (
     <section className="flex flex-col md:flex-row md:items-center md:justify-between">
       <div className="relative">
@@ -26,7 +26,8 @@ const FormWrapper = ({ language }) => {
         )}
       </div>
       <div className="md:mr-8 lg:mr-40">
-        {language ? <EnglishForm /> : <PortugueseForm />}
+        {/* {language ? <EnglishForm /> : <PortugueseForm />} */}
+        {language ? <FormEn /> : <FormPt />}
       </div>
     </section>
   );

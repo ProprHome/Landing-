@@ -1,7 +1,7 @@
 // imported from framer
 
-export default function Form(props) {
-  function handleFormSubmit(event) {
+export default function Form(props: any) {
+  function handleFormSubmit(event: any) {
     event.preventDefault();
     console.log('handle Form submit running');
 
@@ -14,7 +14,14 @@ export default function Form(props) {
       onSubmit={handleFormSubmit}
       action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
       method="POST"
-      style={containerStyle}
+      style={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        overflow: 'hidden',
+      }}
     >
       <h2 className=" text-center font-medium text-3xl">
         Baixar e-book gratuito
@@ -55,7 +62,6 @@ export default function Form(props) {
       />
       <select
         style={inputStyle}
-        type="text"
         name="consumer"
         id="consumer_type"
         required
