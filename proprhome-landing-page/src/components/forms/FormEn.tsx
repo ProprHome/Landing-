@@ -13,7 +13,6 @@ export default function Form(props: any) {
 
   return (
     <form
-      onSubmit={handleFormSubmit}
       action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
       method="POST"
       style={{
@@ -26,7 +25,7 @@ export default function Form(props: any) {
       }}
     >
       <h2 className=" text-center font-medium text-3xl">
-        Download free e-book
+        Download your free e-book
       </h2>
       <input type="hidden" name="oid" value="00D7Q00000BRe0d" />
       <input type="hidden" name="retURL" value="http://" />
@@ -34,11 +33,11 @@ export default function Form(props: any) {
         style={inputStyle}
         required
         placeholder="Full name"
-        id="first_name"
         maxLength={40}
-        name="first_name"
         size={20}
         type="text"
+        id="00N7Q00000JUEay"
+        name="00N7Q00000JUEay"
       />
 
       <input
@@ -64,16 +63,18 @@ export default function Form(props: any) {
       />
       <select
         style={inputStyle}
-        name="consumer"
-        id="consumer_type"
+        id="00N7Q00000JUEb3"
+        name="00N7Q00000JUEb3"
+        title="Customer Type"
         required
         placeholder="Select consumer type"
+        className="p-2"
       >
-        <option value="Choose customer type">Choose customer type</option>
-        <option value="buyer">Buyer</option>
-        <option value="tenant">Tenant</option>
-        <option value="agent">Agent</option>
-        <option value="owner">Owner</option>
+        <option value="">Choose customer type</option>
+        <option value="Buyer">Buyer</option>
+        <option value="Tenant">Tenant</option>
+        <option value="Owner">Owner</option>
+        <option value="Agent">Agent</option>
       </select>
 
       <label
@@ -95,13 +96,14 @@ export default function Form(props: any) {
           justifyContent: 'center',
         }}
       >
+        {/* radio group */}
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="radio"
-            name="buying_time"
-            value="notNow"
             id="notNow"
-            required
+            name="notNow"
+            value="notNow"
+            className="h-5 w-5 text-[#00D188] focus:border-[#00D188] focus:ring-[-[#00D188]"
           />
           <label htmlFor="notNow" style={labelStyle}>
             Not now
@@ -115,33 +117,36 @@ export default function Form(props: any) {
         >
           <input
             type="radio"
-            name="buying_time"
-            value="readyToBuy"
-            id="readyToBuy"
+            id="00N7Q00000JUIus"
+            name="00N7Q00000JUIus"
+            value="1"
+            className="h-5 w-5 text-[#00D188]"
           />
-          <label htmlFor="readyToBuy" style={labelStyle}>
+          <label htmlFor="00N7Q00000JUIus" style={labelStyle}>
             Ready to buy
           </label>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="radio"
-            name="buying_time"
-            value="oneMonth"
-            id="oneMonth"
+            id="00N7Q00000JUIux"
+            name="00N7Q00000JUIux"
+            value="1"
+            className="h-5 w-5 text-[#00D188] focus:border-[#00D188]"
           />
-          <label htmlFor="oneMonth" style={labelStyle}>
+          <label htmlFor="00N7Q00000JUIux" style={labelStyle}>
             Within one month
           </label>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="radio"
-            name="buying_time"
-            value="sixMonths"
-            id="sixMonths"
+            id="00N7Q00000JUIv2"
+            name="00N7Q00000JUIv2"
+            value="1"
+            className="h-5 w-5 text-[#00D188]"
           />
-          <label htmlFor="sixMonths" style={labelStyle}>
+          <label htmlFor="00N7Q00000JUIv2" style={labelStyle}>
             Within 6 months
           </label>
         </div>

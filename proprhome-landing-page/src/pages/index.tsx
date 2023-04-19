@@ -11,18 +11,20 @@ export default function Home() {
   // true means English, false means Portuguese
   const [language, setLanguage] = useState(true);
   return (
-    <main>
+    <>
       <Head>
         <title>
           ProprHome - Portugal’s 1st real estate marketplace powered by
           blockchain
         </title>
       </Head>
-      <Header language={language} setLanguage={setLanguage} />
-      <Hero language={language} />
-      <FormWrapper language={language} />
-      <Details language={language} />
-      <Footer language={language} />
-    </main>
+      <main>
+        <Header language={language} setLanguage={setLanguage} />
+        <Hero language={language} />
+        <FormWrapper language={language} />
+        <Details language={language} />
+        <Footer language={language} />
+      </main>
+    </>
   );
 }

@@ -9,33 +9,33 @@ const Details = ({ language }: any) => {
             Get your free e-book today
           </h3>
           <ul className="text-center md:flex md:flex-wrap md:justify-center md:items-center md:gap-5 md:gap-y-2">
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Introduction</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Introduction</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Documents and Identification</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Documents and Identification</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Finanças Portal</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Finanças Portal</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">IRS, Personal income tax</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">IRS, Personal income tax</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Direct Social Security</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Direct Social Security</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Banking</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Banking</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Bringing pets</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Bringing pets</span>
             </li>
           </ul>
         </>
@@ -45,35 +45,35 @@ const Details = ({ language }: any) => {
             Obtenha seu e-book grátis hoje
           </h3>
           <ul className="text-center md:flex md:flex-wrap md:justify-center md:items-center md:gap-5 md:gap-y-2">
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Introdução</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Introdução</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Documentos e Identificação</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Documentos e Identificação</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Portal de Finanças</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Portal de Finanças</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">
                 IRS, Imposto sobre o Rendimento das Pessoas Singulares
               </span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Segurança Social Direta</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Segurança Social Direta</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Banca</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Banca</span>
             </li>
-            <li className="font-normal text-xl my-2 md:my-0 relative">
-              <span className="hidden md:inline-block absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-[#00D188]"></span>
-              <span className="ml-6">Tragendo animais de estimação</span>
+            <li className="font-normal text-xl my-2 md:my-0 ">
+              <span className=" inline-block w-4 h-4 rounded-full bg-[#00D188]"></span>
+              <span className="ml-2">Tragendo animais de estimação</span>
             </li>
           </ul>
         </>
