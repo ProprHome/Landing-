@@ -52,6 +52,42 @@ function TestForm() {
     }
   };
 
+  // checkbox logic
+  const handleCheckboxChange = (
+    name: string,
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    switch (name) {
+      case 'readyToBuy':
+        setReadyToBuy(true);
+        setWithinOneMonth(false);
+        setWithinSixMonths(false);
+        setNotNow(false);
+        break;
+      case 'withinOneMonth':
+        setReadyToBuy(false);
+        setWithinOneMonth(true);
+        setWithinSixMonths(false);
+        setNotNow(false);
+
+        break;
+      case 'withinSixMonths':
+        setReadyToBuy(false);
+        setWithinOneMonth(false);
+        setWithinSixMonths(true);
+        setNotNow(false);
+        break;
+      case 'notNow':
+        setReadyToBuy(false);
+        setWithinOneMonth(false);
+        setWithinSixMonths(false);
+        setNotNow(true);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <form
       onSubmit={handleFormSubmit}
@@ -62,7 +98,7 @@ function TestForm() {
       <input type="hidden" name="oid" value="00D7Q00000BRe0d" />
       <input type="hidden" name="retURL" value="http://" />
 
-      <h2 className=" text-center font-medium text-3xl">
+      <h2 className=" text-center font-medium text-3xl mb-5">
         Faça o download e-book gratuito
       </h2>
       <label htmlFor="fullName" className="hidden">
@@ -140,8 +176,8 @@ function TestForm() {
             name="notNow"
             type="checkbox"
             checked={notNow}
-            onChange={(event) => setNotNow(event.target.checked)}
-            value="notNow"
+            // onChange={(event) => setNotNow(event.target.checked)}
+            onChange={(event) => handleCheckboxChange('notNow', event)}
             className="text-[#00D188] focus:border-[#00D188] focus:ring-[-[#00D188] h-4 w-4 rounded-full"
           />
           Agora não
@@ -156,7 +192,8 @@ function TestForm() {
             name="00N7Q00000JUIus"
             type="checkbox"
             checked={readyToBuy}
-            onChange={(event) => setReadyToBuy(event.target.checked)}
+            // onChange={(event) => setReadyToBuy(event.target.checked)}
+            onChange={(event) => handleCheckboxChange('readyToBuy', event)}
             value="1"
             className="text-[#00D188] focus:border-[#00D188] focus:ring-[-[#00D188] h-4 w-4 rounded-full"
           />
@@ -172,7 +209,8 @@ function TestForm() {
             name="00N7Q00000JUIux"
             type="checkbox"
             checked={withinOneMonth}
-            onChange={(event) => setWithinOneMonth(event.target.checked)}
+            // onChange={(event) => setWithinOneMonth(event.target.checked)}
+            onChange={(event) => handleCheckboxChange('withinOneMonth', event)}
             className="text-[#00D188] focus:border-[#00D188] focus:ring-[-[#00D188] h-4 w-4 rounded-full"
             value="1"
           />
@@ -188,7 +226,8 @@ function TestForm() {
             name="00N7Q00000JUIv2"
             type="checkbox"
             checked={withinSixMonths}
-            onChange={(event) => setWithinSixMonths(event.target.checked)}
+            // onChange={(event) => setWithinSixMonths(event.target.checked)}
+            onChange={(event) => handleCheckboxChange('withinSixMonths', event)}
             className="text-[#00D188] focus:border-[#00D188] focus:ring-[-[#00D188] h-4 w-4 rounded-full"
             value="1"
           />
@@ -198,7 +237,7 @@ function TestForm() {
 
       <button
         type="submit"
-        className="bg-[#00D188] rounded-[50px] h-14 min-w-36 px-4 mt-14 text-lg text-white"
+        className="bg-[#00D188] rounded-[50px] h-14 min-w-36 px-6 mt-14 md:mt-8 text-lg text-white"
       >
         Faça o download do E-book
       </button>
