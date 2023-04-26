@@ -21,9 +21,9 @@ module.exports = {
         bermuda: "#78dcca",
       },
       backgroundImage: {
-        bloomberg: "url('/bloomberg.png')",
-        marketwatch: "url('/marketwatch.png')",
-        yahoo: "url('/yahoo.png')",
+        bloomberg: "url('/bloomberg.svg')",
+        marketwatch: "url('/marketwatch.svg')",
+        yahoo: "url('/yahoo.svg')",
       },
     },
   },
