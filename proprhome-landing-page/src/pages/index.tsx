@@ -2,6 +2,7 @@
 import Details from '@/components/details/Details';
 import Footer from '@/components/footer/Footer';
 import FormWrapper from '@/components/form-wrapper/FormWrapper';
+import Banner from '@/components/header/Banner';
 import Header from '@/components/header/Header';
 import Hero from '@/components/hero/Hero';
 import Head from 'next/head';
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <main>
         <Header language={language} setLanguage={setLanguage} />
+        <Banner language={language} />
         <Hero language={language} />
         <FormWrapper language={language} />
         <Details language={language} />
