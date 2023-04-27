@@ -16,13 +16,13 @@ function TestForm() {
       const payload = {
         oid: '00D7Q00000BRe0d',
         retURL: 'http://',
-        '00N7Q00000JUFbc': fullName,
+        'first_name': fullName,
         email: email,
         phone: phone,
-        '00N7Q00000JUFbS': customerType,
-        '00N7Q00000JUIv7': readyToBuy.toString(),
-        '00N7Q00000JUIvC': withinOneMonth.toString(),
-        '00N7Q00000JUIvH': withinSixMonths.toString(),
+        '00N7Q00000JUEb3': customerType,
+        '00N7Q00000JUIus': readyToBuy.toString(),
+        '00N7Q00000JUIux': withinOneMonth.toString(),
+        '00N7Q00000JUIv2': withinSixMonths.toString(),
       };
 
       const response = await fetch(
@@ -105,8 +105,8 @@ function TestForm() {
         Nome completo:
       </label>
       <textarea
-        id="00N7Q00000JUEay"
-        name="00N7Q00000JUEay"
+        id="first_name"
+        name="first_name"
         wrap="soft"
         placeholder="Nome completo"
         className="m-0 py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden "

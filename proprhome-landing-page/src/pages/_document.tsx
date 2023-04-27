@@ -11,6 +11,7 @@ export default function Document() {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <meta httpEquiv="Content-type" content="text/html; charset=UTF-8" />
       </Head>
       <body>
         <Main />
