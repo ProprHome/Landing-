@@ -12,44 +12,76 @@ function TestForm() {
 
   const handleFormSubmit = async (event: any) => {
     event.preventDefault();
-    try {
-      const payload = {
-        oid: '00D7Q00000BRe0d',
-        retURL: 'http://',
-        'first_name': fullName,
-        email: email,
-        phone: phone,
-        '00N7Q00000JUEb3': customerType,
-        '00N7Q00000JUIus': readyToBuy.toString(),
-        '00N7Q00000JUIux': withinOneMonth.toString(),
-        '00N7Q00000JUIv2': withinSixMonths.toString(),
-      };
 
-      const response = await fetch(
-        'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
+    const payload = {
+      oid: '00D7Q00000BRe0d',
+      retURL: 'http://',
+      first_name: fullName,
+      email: email,
+      phone: phone,
+      '00N7Q00000JUEb3': customerType,
+      '00N7Q00000JUIus': readyToBuy.toString(),
+      '00N7Q00000JUIux': withinOneMonth.toString(),
+      '00N7Q00000JUIv2': withinSixMonths.toString(),
+    };
 
-          body: new URLSearchParams(payload),
-        }
-      );
+    const response = await fetch(
+      'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
 
-      if (response.ok) {
-        // handle successful form submission
-        console.log('Form submitted successfully!');
-        window.open(
-          'https://drive.google.com/file/d/1r9I_n0GDHLEFBBO4gVkCVQHG5VOgGXWD/view?usp=sharing'
-        );
-      } else {
-        // handle failed form submission
-        console.error('Form submission failed.');
+        body: new URLSearchParams(payload),
       }
-    } catch (error) {
-      console.error('Form submission error:', error);
-    }
+    );
+    // handle successful form submission
+    console.log('Form submitted successfully!');
+    window.open(
+      'https://drive.google.com/file/d/1r9I_n0GDHLEFBBO4gVkCVQHG5VOgGXWD/view?usp=sharing'
+    );
+
+    // returning 'POST https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8 net::ERR_FAILED 200 (OK)' every time. Form data is being received by backend. Removing error handling for now. Also getting CORS errors
+
+    // try {
+    //   const payload = {
+    //     oid: '00D7Q00000BRe0d',
+    //     retURL: 'http://',
+    //     'first_name': fullName,
+    //     email: email,
+    //     phone: phone,
+    //     '00N7Q00000JUEb3': customerType,
+    //     '00N7Q00000JUIus': readyToBuy.toString(),
+    //     '00N7Q00000JUIux': withinOneMonth.toString(),
+    //     '00N7Q00000JUIv2': withinSixMonths.toString(),
+    //   };
+
+    //   const response = await fetch(
+    //     'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
+    //     {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/x-www-form-urlencoded',
+    //       },
+
+    //       body: new URLSearchParams(payload),
+    //     }
+    //   );
+
+    //   if (response.ok) {
+    //     // handle successful form submission
+    //     console.log('Form submitted successfully!');
+    //     window.open(
+    //       'https://drive.google.com/file/d/1r9I_n0GDHLEFBBO4gVkCVQHG5VOgGXWD/view?usp=sharing'
+    //     );
+    //   } else {
+    //     // handle failed form submission
+    //     console.error('Form submission failed.');
+    //   }
+    // } catch (error) {
+    //   console.error('Form submission error:', error);
+    // }
   };
 
   // checkbox logic
