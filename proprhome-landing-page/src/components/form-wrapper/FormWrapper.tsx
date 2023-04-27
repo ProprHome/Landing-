@@ -5,7 +5,7 @@ import TestForm from '../forms/TestForm';
 
 const FormWrapper = ({ language }: any) => {
   return (
-    <section className="flex flex-col  md:flex-row md:items-center md:justify-center md:gap-20 md:mb-20">
+    <section className="flex flex-col p-2 md:flex-row md:items-center md:justify-center md:gap-20 md:mb-20">
       <div className="relative mb-10 md:mb-0">
         {language ? (
           <Image
