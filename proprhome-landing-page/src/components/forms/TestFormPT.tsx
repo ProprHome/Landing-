@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 function TestForm() {
@@ -10,6 +11,8 @@ function TestForm() {
   const [withinOneMonth, setWithinOneMonth] = useState(false);
   const [withinSixMonths, setWithinSixMonths] = useState(false);
   const [notNow, setNotNow] = useState(false);
+
+  const router = useRouter();
 
   const handleFormSubmit = async (event: any) => {
     event.preventDefault();
@@ -31,6 +34,7 @@ function TestForm() {
       'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
       {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
@@ -43,6 +47,9 @@ function TestForm() {
     window.open(
       'https://drive.google.com/file/d/1r9I_n0GDHLEFBBO4gVkCVQHG5VOgGXWD/view?usp=sharing'
     );
+
+    // reload window after form submit
+    router.reload();
 
     // returning 'POST https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8 net::ERR_FAILED 200 (OK)' every time. Form data is being received by backend. Removing error handling for now. Also getting CORS errors
 
