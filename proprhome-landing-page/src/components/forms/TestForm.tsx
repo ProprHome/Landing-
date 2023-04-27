@@ -162,6 +162,7 @@ function TestForm() {
         placeholder="First Name"
         size={20}
         type="text"
+        required
         className="py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden"
         value={firstName}
         onChange={(event) => setFirstName(event.target.value)}
@@ -179,6 +180,7 @@ function TestForm() {
         type="text"
         className="py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden"
         value={lastName}
+        required
         onChange={(event) => setLastName(event.target.value)}
       />
 
@@ -191,7 +193,8 @@ function TestForm() {
         name="email"
         placeholder="Email"
         size={20}
-        type="text"
+        type="email"
+        required
         className="py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden"
         value={email}
         onChange={(event) => setEmail(event.target.value)}
@@ -222,6 +225,7 @@ function TestForm() {
         className="py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden"
         value={customerType}
         onChange={(event) => setCustomerType(event.target.value)}
+        required
       >
         <option value="">Choose customer type</option>
         <option value="Buyer">Buyer</option>
