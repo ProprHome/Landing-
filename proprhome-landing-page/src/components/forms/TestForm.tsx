@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
 function TestForm() {
-  const [fullName, setFullName] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [customerType, setCustomerType] = useState('');
@@ -15,7 +16,8 @@ function TestForm() {
     const payload = {
       oid: '00D7Q00000BRe0d',
       retURL: 'http://',
-      '00N7Q00000JUEay': fullName,
+      first_name: firstName,
+      last_name: lastName,
       email: email,
       phone: phone,
       '00N7Q00000JUEb3': customerType,
@@ -131,7 +133,7 @@ function TestForm() {
       <h2 className=" text-center font-medium text-3xl mb-5">
         Download your free e-book
       </h2>
-      <label htmlFor="fullName" className="hidden">
+      {/* <label htmlFor="fullName" className="hidden">
         Full Name:
       </label>
       <textarea
@@ -142,7 +144,36 @@ function TestForm() {
         className="m-0 py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden "
         value={fullName}
         onChange={(event) => setFullName(event.target.value)}
-      ></textarea>
+      ></textarea> */}
+      <label htmlFor="first_name" className="hidden">
+        First Name:
+      </label>
+      <input
+        id="first_name"
+        maxLength={80}
+        name="first_name"
+        placeholder="First Name"
+        size={20}
+        type="text"
+        className="py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden"
+        value={firstName}
+        onChange={(event) => setFirstName(event.target.value)}
+      />
+
+      <label htmlFor="last_name" className="hidden">
+        Last Name:
+      </label>
+      <input
+        id="last_name"
+        maxLength={80}
+        name="last_name"
+        placeholder="Last Name"
+        size={20}
+        type="text"
+        className="py-4 px-4 w-80 h-14 bg-white border border-[#C4C4C4] rounded-xl font-normal text-[#767676]  resize-none overflow-hidden"
+        value={lastName}
+        onChange={(event) => setLastName(event.target.value)}
+      />
 
       <label htmlFor="email" className="hidden">
         Email:
