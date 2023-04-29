@@ -16,5 +16,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           ls -la
-          sudo ftp 92.205.2.171
+          sudo ftp -inv 92.205.2.171 <<EOF
+          user ftp_u@proprhome.com @Veera123
+          cd proprhome-landing-page/out
+          ls -la
+          bye
+          EOF
       - run: echo "🍏 This job's status is ${{ job.status }}."
