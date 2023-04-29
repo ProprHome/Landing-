@@ -16,4 +16,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           ls -la
+          sudo ftp 92.205.2.171
       - run: echo "🍏 This job's status is ${{ job.status }}."
