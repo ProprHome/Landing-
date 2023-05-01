@@ -12,11 +12,9 @@ const Header = ({ language, setLanguage }: any) => {
   return (
     <header className="bg-transparent-white px-7 py-7 flex items-center justify-between">
       <div className="relative h-9 w-44 md:h-16 md:w-72">
-        <Image
+        <img
           src="/propr-logo.png"
           alt="ProprHome logo"
-          fill
-          object-fit="contain"
         />
       </div>
       {/* translation switch */}

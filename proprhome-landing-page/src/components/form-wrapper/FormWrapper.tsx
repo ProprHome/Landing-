@@ -8,18 +8,16 @@ const FormWrapper = ({ language }: any) => {
     <section className="flex flex-col p-2 md:flex-row md:items-center md:justify-center md:gap-20 md:mb-20">
       <div className="relative mb-10 md:mb-0">
         {language ? (
-          <Image
+          <img
             src="/01.png"
             alt="ebook cover for proprhome book"
-            height={550}
-            width={550}
+           
           />
         ) : (
-          <Image
+          <img
             src="/02.png"
             alt="ebook cover for proprhome book"
-            height={700}
-            width={700}
+           
           />
         )}
       </div>
